@@ -8,6 +8,11 @@ function EmployeeList() {
   const [filteredEmployees, setFilteredEmployees] = useState([]);
   const nav = useNavigate();
 
+
+  function CreateEmployee (){
+    nav("CreateEmployee")
+  }
+
   useEffect(() => {
     // Fetch employee data from the backend API
     axios
@@ -50,9 +55,8 @@ function EmployeeList() {
         <h2>Employee List</h2>
       </div>
 
-      <div className='total-count'>
-        <label>Total Count: {filteredEmployees.length}</label>{' '}
-        <Link to='CreateEmployee'>Create Employee</Link>
+      <div className='btn-primary'>
+      <button onClick={CreateEmployee}Create Employee> Create Employee</button>
       </div>
 
       <div className='search-input'>
@@ -114,9 +118,13 @@ function EmployeeList() {
                                 </td>
                             </tr>
                         ))}
-
+                        
                     </tbody>
                 </table>
+                <div className='total-count'>
+        <label><b>Total Count: {filteredEmployees.length}</b></label>{' '}
+        
+      </div>
             </>)}
   </div>
   )

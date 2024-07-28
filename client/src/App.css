@@ -2,7 +2,8 @@
   
   height:40px;
   padding:10px;
-  background: #FFFF00;
+  background: white;
+  text-align: center;
   
   
 }
@@ -300,7 +301,7 @@ img {
 .container button {
   width: 100%;
   padding: 10px;
-  background-color:#92D050;
+  background-color:rebeccapurple;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -315,6 +316,12 @@ button:disabled {
 }
 
 button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: rgb(19, 245, 106);
+}
+body{
+  background-color:lightcyan ;
 }
 
+.total-count{
+  
+}
