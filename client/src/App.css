@@ -1,0 +1,320 @@
+.heading{
+  
+  height:40px;
+  padding:10px;
+  background: #FFFF00;
+  
+  
+}
+
+.heading h2{
+  margin: 10px;
+}
+.logo{
+
+  margin-bottom: 20px;
+  width:190px;
+}
+
+.box-container{
+  margin:20px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.box-container label{
+  font-weight: 600;
+}
+.box-container input{
+
+  border:1px solid black;
+  height:30px;
+  margin:20px;
+  outline:none;
+ width:260px;
+ padding:3px;
+
+  
+
+}
+
+.box-container button{
+
+  background-color: #92D050;
+  color:white;
+  border:none;
+  width:260px;
+  height:35px;
+  position: relative;
+  left:25%;
+ margin-top: 5px;
+
+
+}
+
+
+/* nav heading*/
+
+header  nav{
+  padding:10px 0 20px 0px;
+  display:flex;
+  width:100%;
+  height:20px;
+  gap:10px;
+  background: #DDEBF7;
+}
+
+
+.flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navlink{
+  display: flex;
+  gap:20px;
+}
+.link{
+text-decoration: none;
+font-weight: 600;
+font-size: 20px;
+}
+nav button{
+
+background:red;
+border:none;
+color:white;
+position: absolute;
+left:80%;
+top:14.5%;
+padding: 10px;
+
+}
+
+nav p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.total-count {
+  font-size: 16px;
+  color: #666;
+  margin:10px;
+}
+
+.total-count a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.total-count a:hover {
+  text-decoration: underline;
+}
+
+/* Search input */
+.search-input {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left:70%;
+  top:31%;
+}
+
+.search-input label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.search-input input[type="text"] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #DDEBF7;
+  color: #333;
+  font-weight: 600;
+}
+
+td img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td button,
+td a {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+td .btn-warning {
+  background-color: #7c4ef0;
+  margin: 5px;
+  text-decoration: none;
+  width:70px;
+
+  
+}
+
+td .btn-danger {
+  background-color: #d9534f;
+  margin: 5px;
+  width:60px;
+
+}
+
+td .btn-disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+td button:hover,
+td a:hover {
+  opacity: 0.8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search-input input[type="text"] {
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 14px;
+  }
+}
+/* CreateEmployee.css */
+
+/* Container styles */
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form element styles */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.form-control, .form-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Radio button styles */
+.form-check-label {
+  margin-right: 10px;
+  color: #333;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+/* Image preview styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.container button {
+  width: 100%;
+  padding: 10px;
+  background-color:#92D050;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
